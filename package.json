@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "turbo:dry-run": "echo '' &&  turbo build --dry-run",
+    "turbo:list": "echo 'Verify the package is recognized' && pnpm list --depth 0",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
