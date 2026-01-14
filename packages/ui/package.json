@@ -1,9 +1,15 @@
 {
   "name": "@geniusgarage/ui",
   "version": "1.0.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./card": "./src/card.tsx"
+  },
   "main": "./src/index.ts",
   "types": "./src/index.ts",
-  "exports": {},
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
